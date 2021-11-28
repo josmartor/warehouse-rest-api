@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: mongodb://api_user:api_user_pwd@mongodb-host:27017/warehouse
