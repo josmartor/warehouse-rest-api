@@ -21,4 +21,6 @@ As this is a very simple application, we will basically have only two containers
 
 The rest api application will be available at http://localhost:8081.
 
+There is a postman collection in docs folder with examples to test the API.
+
 Enjoy!
