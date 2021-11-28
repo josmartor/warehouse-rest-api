@@ -1,1 +1,169 @@
-
+{
+	"info": {
+		"_postman_id": "959c01c1-fb98-4555-8325-4b3b824a6d4a",
+		"name": "Warehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all tracking devices config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/tracking-devices/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tracking device config by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/tracking-devices/id1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						"id1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tracking devices waiting for activation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/tracking-devices/waiting-activation",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						"waiting-activation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get tracking devices ready for sae",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/tracking-devices/ready-for-sale",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						"ready-for-sale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a tracking device config",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"id11\",\r\n    \"temperature\" : 101.0,\r\n    \"simCard\" : {\r\n        \"simId\" : \"11\",\r\n        \"operatorCode\" : \"eier438-fs\",\r\n        \"country\" : \"EN\",\r\n        \"status\" : \"ACTIVE\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/tracking-devices/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a tracking device config",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"id10\",\r\n    \"temperature\" : 101.0,\r\n    \"simCard\" : {\r\n        \"simId\" : \"10\",\r\n        \"operatorCode\" : \"eier438-fs\",\r\n        \"country\" : \"EN\",\r\n        \"status\" : \"WAITING_FOR_ACTIVATION\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/tracking-devices/id10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						"id10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a tracking device config",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"id10\",\r\n    \"temperature\" : 101.0,\r\n    \"simCard\" : {\r\n        \"simId\" : \"10\",\r\n        \"operatorCode\" : \"eier438-fs\",\r\n        \"country\" : \"EN\",\r\n        \"status\" : \"WAITING_FOR_ACTIVATION\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/tracking-devices/id10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"tracking-devices",
+						"id10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
